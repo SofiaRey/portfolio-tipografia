@@ -1,5 +1,5 @@
 import { Container } from '@chakra-ui/react'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, WorkImage } from '../../components/work'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (

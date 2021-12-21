@@ -1,7 +1,7 @@
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import thumbCollages from '../public/images/works/collage_eyecatch.png'
 import thumbAutorretrato from '../public/images/works/retrato_eyecatch.png'
 import thumbFotografia from '../public/images/works/fotografia_eyecatch.png'
