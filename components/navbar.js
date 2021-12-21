@@ -24,7 +24,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
     <NextLink href={href} passHref>
       <Link
         p={2}
-        bg={active ? 'grassTeal' : undefined}
+        bg={active ? '#D6BCFA' : undefined}
         color={active ? '#202023' : inactiveColor}
         _target={_target}
         {...props}
@@ -40,6 +40,7 @@ const Navbar = props => {
 
   return (
     <Box
+      alignItems="center"
       position="fixed"
       as="nav"
       w="100%"
@@ -71,15 +72,12 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+            Trabajos
           </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
-          <ThemeToggleButton />
+          {/* <ThemeToggleButton /> */}
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">

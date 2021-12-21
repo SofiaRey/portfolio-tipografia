@@ -22,7 +22,10 @@ import {
   IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
-  IoLogoDiscord
+  IoLogoDiscord,
+  IoLogoWhatsapp,
+  IoMail,
+  IoMailOutline
 } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 
@@ -36,7 +39,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack mobile developer based in Uruguay 🇺🇾!
+        Hola, bienvenidos a mi Curriculum interactivo!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -44,7 +47,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Sofía Rey
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Desarrolladora Web Junior</p>
         </Box>
         <Box
           flexShrink={0}
@@ -59,7 +62,7 @@ const Home = () => (
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/sofia.png"
+            src="/images/profile.jpg"
             alt="Profile image"
           />
         </Box>
@@ -67,19 +70,18 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Perfil Personal
         </Heading>
         <Paragraph>
-          Sofía is a freelance and a full-stack developer based in Uruguay  with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera.
+          Soy una desarrolladora web junior, formada en ÁNIMA, tengo 18 años.
+          Estoy estudiado una Licenciatura en Diseño Multimedia, combinando mis
+          áreas favoritas: programación y diseño. En mi tiempo libre, disfruto
+          de tocar el piano, hacer acrobacia en telas y paro de manos.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
+              Mis trabajos
             </Button>
           </NextLink>
         </Box>
@@ -87,73 +89,92 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Experiencia
         </Heading>
         <BioSection>
-          <BioYear>2003</BioYear>
-          Born in Montevideo, Uruguay.
+          <BioYear>11/2021 - Presente</BioYear>
+          Desarrolladora Full-stack - CreateThrive
         </BioSection>
         <BioSection>
-          <BioYear>2020</BioYear>
-          Completed the HighSchool's Program in "ANIMA Bachillerato Tecnológico"
+          <BioYear>08/2020 - 11/2020</BioYear>
+          Pasantía en Ingeniería en QA - Rootstrap
+        </BioSection>
+        <BioSection>
+          <BioYear>05/2020 - 08/2020</BioYear>
+          Desarrolladora Freelance
+        </BioSection>
+        <BioSection>
+          <BioYear>04/2019 - 11/2019</BioYear>
+          Pasantía en desarrollo - Arkano
+        </BioSection>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Educación
+        </Heading>
+        <BioSection>
+          <BioYear>03/2021 - Presente</BioYear>
+          Universidad ORT - Lic. Diseño Multimedia
+        </BioSection>
+        <BioSection>
+          <BioYear>02/2018 - 11/2020</BioYear>
+          ÁNIMA - Bachillerato Tecnológico (TIC)
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Art, Music, Drawing, Playing Piano, Photography, Programming
-        </Paragraph>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          On the web
+          Contacto y redes
         </Heading>
         <List>
+          <ListItem>
+            <Link
+              href="mailto:sofia.rey.se@gmail.com?Subject=Contacto"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="purple"
+                leftIcon={<Icon as={IoMailOutline} />}
+              >
+                sofia.rey.se@gmail.com
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://wa.me/+59894214359" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="purple"
+                leftIcon={<Icon as={IoLogoWhatsapp} />}
+              >
+                +598 94 214 359
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://instagram.com/bitacora.multimedia"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="purple"
+                leftIcon={<Icon as={IoLogoInstagram} />}
+              >
+                @bitacora.multimedia
+              </Button>
+            </Link>
+          </ListItem>
           <ListItem>
             <Link href="https://github.com/SofiaRey" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="purple"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
                 @SofiaRey
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/SofuuRey" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @SofuuRey
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/sofia.rey.se" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoInstagram} />}
-              >
-                @sofia.rey.se
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/bitacora.multimedia" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoInstagram} />}
-              >
-                @bitacora.multimedia
               </Button>
             </Link>
           </ListItem>
@@ -165,17 +186,9 @@ const Home = () => (
             title="Sofía Rey"
             thumbnail={thumbYouTube}
           >
-            My YouTube channel
+            Mi canal de youtube
           </GridItem>
         </SimpleGrid>
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
     </Container>
   </Layout>
