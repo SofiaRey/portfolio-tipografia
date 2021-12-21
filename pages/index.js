@@ -19,12 +19,9 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import {
-  IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
-  IoLogoDiscord,
   IoLogoWhatsapp,
-  IoMail,
   IoMailOutline
 } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
